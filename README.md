@@ -1,0 +1,2 @@
+# awesomeProject
+go learn demo
