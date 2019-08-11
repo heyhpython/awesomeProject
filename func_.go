@@ -17,7 +17,7 @@ func closure(a int) func(int) int {
 	}
 }
 
-func timer(f1 func(a int) int ) func(int) int{
+func timer_(f1 func(a int) int ) func(int) int{
 	return func(i int) int {
 		return f1(a)
 	}
