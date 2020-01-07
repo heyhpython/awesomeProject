@@ -13,8 +13,8 @@ func trace(a string) string {
 	return a
 }
 
-func untrace(a string)  {
-	fmt.Println("leaving: " , a)
+func untrace(a string) {
+	fmt.Println("leaving: ", a)
 }
 
 func hah() {

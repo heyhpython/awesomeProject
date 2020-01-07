@@ -4,7 +4,7 @@ import "fmt"
 
 // 常量
 
-const a int  =  1
+const a int = 1
 const (
 	b = 2
 	c = "qqwewqeqd"
@@ -20,6 +20,6 @@ const (
 )
 
 func main() {
-	fmt.Println(a,b,c,d,e)
-	fmt.Println(z,x,v,n)
+	fmt.Println(a, b, c, d, e)
+	fmt.Println(z, x, v, n)
 }

@@ -4,12 +4,12 @@ import "fmt"
 
 type Student struct {
 	name string
-	age int
+	age  int
 }
 
 func main() {
 	s := Student{
-		name:"heyuhao", age:18,
+		name: "heyuhao", age: 18,
 	}
 
 	printStudent(s)

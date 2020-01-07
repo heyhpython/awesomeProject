@@ -16,17 +16,17 @@ import (
 ||
 */
 const (
-	B  float64 = 1 << (iota * 10)
+	B float64 = 1 << (iota * 10)
 	KB
 	MB
 	GB
 )
+
 func main() {
 	a := 1
-	if a>0 && (10/a > 1) {
+	if a > 0 && (10/a > 1) {
 		fmt.Println("ok")
 	}
 
-
-	fmt.Println(B,KB,MB,GB)
+	fmt.Println(B, KB, MB, GB)
 }

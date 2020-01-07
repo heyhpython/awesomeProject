@@ -9,7 +9,7 @@ func main() {
 	fmt.Println(s1)
 
 	a := [10]int{}
-	s2 :=a[:5]
+	s2 := a[:5]
 	fmt.Println(s2)
 	s3 := make([]int, 3, 100)
 	fmt.Println(len(s3))
@@ -18,11 +18,11 @@ func main() {
 }
 
 func temp() {
-	s1 := make([]int,3,6)
+	s1 := make([]int, 3, 6)
 	fmt.Println(&s1)
-	s1 = append(s1,1,2,3)
+	s1 = append(s1, 1, 2, 3)
 	fmt.Println(&s1)
-	s1 = append(s1,1,2,3)
+	s1 = append(s1, 1, 2, 3)
 	fmt.Println(&s1)
 
 }

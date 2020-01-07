@@ -7,12 +7,12 @@ type Options struct {
 
 func main() {
 	o := Options{
-		para1:1,
-		para2:"qweq"}
+		para1: 1,
+		para2: "qweq"}
 	PrintParas(o)
 }
 
-func PrintParas(o Options)  {
+func PrintParas(o Options) {
 	println(o.para1)
 	println(o.para2)
 }

@@ -8,19 +8,18 @@ import (
 	op "os"
 )
 
-const PI  = 3.14
+const PI = 3.14
 
-var r  = 10
+var r = 10
 
 type newType int
 
 type goStruct struct {
-
 }
 
 type goInterface interface {
-
 }
+
 // 程序的入口 有且仅有一个
 func main() {
 	// 函数名小写代表是包的内部方法 不可被其他包调用

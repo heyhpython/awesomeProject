@@ -7,18 +7,18 @@ import (
 )
 
 type (
-	byte int8
+	//byte int8
 	rune int32
-	文本 string
+	文本   string
 )
 
 func main() {
 	// 零值 当变量未赋值时，编译器自动赋值
 	var a int
 	var b string
-	var c [10] int
-	var d  bool
-	var e  文本
+	var c [10]int
+	var d bool
+	var e 文本
 	fmt.Println(a)
 	fmt.Println(b)
 	fmt.Println(c)
@@ -32,7 +32,6 @@ func main() {
 	//f=1
 	fmt.Println(f)
 
-
 	var g float32 = 52.0
 	fmt.Println(g)
 	h := int(g)
@@ -41,7 +40,7 @@ func main() {
 	// i := string(h)
 	// go中int 转字符串不能直接转 会返回其ascii码位
 	i := strconv.Itoa(h)
-	h,j := strconv.Atoi(i)
+	h, j := strconv.Atoi(i)
 	fmt.Println(i, h, j)
 
 }

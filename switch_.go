@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	// switch 语句内初始化的变量是局部变量作用于语句内
-	switch a := 1;{
+	switch a := 1; {
 	case a >= 0:
 		fmt.Println("a=0")
 		//fallthrough
