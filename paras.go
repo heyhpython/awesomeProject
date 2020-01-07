@@ -9,7 +9,7 @@ func main() {
 	fmt.Printf("min is : %d", m)
 }
 
-func min(paras ... int) (min int) {
+func min(paras ...int) (min int) {
 	if len(paras) == 0 {
 		return 0
 	}

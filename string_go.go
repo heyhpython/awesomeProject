@@ -16,13 +16,11 @@ func main() {
 	println(strings.ToUpper(s))
 
 	// 字符串的分割
-	for _, val := range strings.Fields(s){
+	for _, val := range strings.Fields(s) {
 		println(val)
 	}
-	for _, val := range strings.Split(s, "l"){
+	for _, val := range strings.Split(s, "l") {
 		println(val)
 	}
-
 
 }
-

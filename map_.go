@@ -36,10 +36,10 @@ func mapSort() {
 }
 
 func mapReverse() {
-	m1 := map[int]string{1:"a",2:"b"}
+	m1 := map[int]string{1: "a", 2: "b"}
 	m2 := map[string]int{}
-	for k,v := range  m1{
-		m2[v]=k
+	for k, v := range m1 {
+		m2[v] = k
 	}
 	fmt.Println(m1)
 	fmt.Println(m2)

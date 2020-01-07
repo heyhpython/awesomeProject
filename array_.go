@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	a := [5]int{1,2,3,4,5}
+	a := [5]int{1, 2, 3, 4, 5}
 	f(a) // a 为数组
 	fp(&a)
-	b := new([5] int) // b 为数组的引用
+	b := new([5]int) // b 为数组的引用
 	f(*b)
 	fp(b)
 
@@ -24,9 +24,9 @@ func fp(a *[5]int) {
 	fmt.Println(a)
 }
 
-func doubleA(a [5]int)  [5]int{
-	for ix,v := range a{
-		a[ix] = v*2
+func doubleA(a [5]int) [5]int {
+	for ix, v := range a {
+		a[ix] = v * 2
 	}
 	return a
 }

@@ -5,14 +5,15 @@ import (
 	"time"
 )
 
-const LIM  = 41
+const LIM = 41
 
-var fibs[LIM] uint64
+var fibs [LIM]uint64
+
 func main() {
 	var res uint64 = 0
 	start := time.Now()
-	for i:=0; i<LIM; i++{
-		res=fib(i)
+	for i := 0; i < LIM; i++ {
+		res = fib(i)
 		fmt.Printf("fib(%d) is: %d \n", i, res)
 	}
 	end := time.Now()
@@ -25,7 +26,7 @@ func fib(i int) (res uint64) {
 		res = fibs[i]
 		return
 	}
-	if i <=1 {
+	if i <= 1 {
 		res = 1
 	} else {
 		res = fib(i-1) + fib(i-2)

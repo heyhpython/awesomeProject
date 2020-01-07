@@ -4,15 +4,15 @@ import "fmt"
 
 func main() {
 	var min, max int
-	min, max = MinMax(78,21)
+	min, max = MinMax(78, 21)
 	fmt.Printf("Min: %d  Max: %d", min, max)
 }
 
 func MinMax(a int, b int) (min int, max int) {
-	if a<b{
+	if a < b {
 		min = a
 		max = b
-	}else {
+	} else {
 		min = b
 		max = a
 	}

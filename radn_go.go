@@ -20,7 +20,7 @@ func main() {
 	fmt.Println()
 	ns := int64(time.Now().Nanosecond())
 	rand.Seed(ns)
-	for i:=0; i<10; i++{
+	for i := 0; i < 10; i++ {
 		fmt.Printf("%2.2f / ", 100*rand.Float32())
 
 	}
