@@ -19,6 +19,7 @@ func main() {
 	mapSort()
 	fmt.Println("+++++")
 	mapReverse()
+	map_slice()
 }
 
 func mapSort() {
@@ -32,7 +33,6 @@ func mapSort() {
 	fmt.Println(s)
 	sort.Ints(s)
 	fmt.Println(s)
-
 }
 
 func mapReverse() {
@@ -43,4 +43,20 @@ func mapReverse() {
 	}
 	fmt.Println(m1)
 	fmt.Println(m2)
+}
+
+func map_slice(){
+	items := make([]map[int]int, 5)
+	for ix:=range items{
+		items[ix] = make(map[int]int, 1)
+		items[ix][1] = 2
+	}
+	fmt.Printf("version A: value of items :%v \n", items)
+
+	items2 := make([]map[int]int, 5)
+	for _,item := range items2{
+		item = make(map[int]int, 1)
+		item[1] = 2
+	}
+	fmt.Printf("version B: value od items2 :%v \n", items2)
 }

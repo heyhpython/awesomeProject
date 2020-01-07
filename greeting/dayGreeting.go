@@ -1,0 +1,5 @@
+package nightGreeting
+
+func main() {
+
+}

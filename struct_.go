@@ -35,6 +35,7 @@ func test_strcut() {
 	// 结构体同名字段的优先级
 	// 1.当前结构体的字段优先级高于内层结构体
 	// 2.当两个内部的结构体有同名字段时会报错
+
 }
 
 func main() {
@@ -47,4 +48,6 @@ func main() {
 	fmt.Println(a)
 	test_strcut()
 
+	var b *teacher  = new(teacher)
+	fmt.Println(b.name, 11)
 }
